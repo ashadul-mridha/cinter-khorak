@@ -30,5 +30,71 @@ header .nav-item > .nav-link {
 header .icon__item {
   margin: 0px 9px;
   padding: 4px;
-  font-size: 20px;
+  font-size: 22px;
+  position: relative;
+  cursor: pointer;
+}
+
+header .icon__item:hover {
+  color: #b43768;
+}
+
+header .icon__item .number {
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 4px;
+}
+
+/* slider hero section  */
+.sliderImage {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+
+/* slider prev and next btn change  */
+.hero-section .swiper-button-prev::after,
+.hero-section .swiper-button-next::after {
+  display: none;
+}
+.hero-section .swiper-button-prev {
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50%;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+.hero-section .swiper-button-next {
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50%;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+.hero-section .swiper-button-prev  i {
+    font-size: 17px ;
+    color: #ffffff;
+}
+.hero-section .swiper-button-next  i {
+    font-size: 17px;
+    color: #ffffff;
+}
+.hero-section .swiper-pagination-bullet{
+    width: 20px !important;
+    height: 20px !important;
+    background-color: #000000 !important;
+    opacity: 0.7;
+}
+.hero-section .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    opacity: 1;
 }
