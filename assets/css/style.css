@@ -10,6 +10,29 @@ body {
   padding: 80px 0px;
 }
 
+.section-title{
+  text-transform: capitalize;
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #222222;
+  margin: 10px 0px;
+}
+
+.addToCard{
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #b43768;
+  text-transform: uppercase;
+  padding: 0px;
+}
+
+a{
+  text-decoration: none;
+}
+
 /* header part  */
 header {
   padding: 30px 0px;
@@ -137,4 +160,51 @@ header .icon__item .number {
   font-size: 18px;
   font-weight: 700;
   color: #ffffff;
+}
+
+/* ganji section  */
+.sticker{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 15px;
+  padding-top: 15px;
+}
+.sticker__item > .sticker__item__img{
+  height: 250px;
+  width: auto;
+  display: block;
+}
+.sticker__item > .sticker__item__img > img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.sticker__item > .sticker__item__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 10px 0px 5px 0px;
+  /* padding: 0px 5px; */
+}
+.sticker__item > .sticker__item__header > a{
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 0px;
+  text-decoration: none;
+}
+.sticker__item > .sticker__item__header > p:hover{
+  color: #b43768;
+}
+.sticker__item > .sticker__item__price{
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.sticker__item > .sticker__item__price > .taka{  
+  font-size: 25px;
+  font-weight: 900;
+  color: #000000;
+  margin-bottom: 5px;
 }
