@@ -158,6 +158,7 @@ header .icon__item .number {
 .category__item > .category__item__title > h6 {
   text-align: start;
   font-size: 18px;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   color: #ffffff;
 }
@@ -189,6 +190,7 @@ header .icon__item .number {
 .sticker__item > .sticker__item__header > a {
   font-size: 16px;
   font-weight: 400;
+  font-family: "Raleway", sans-serif;
   color: #000000;
   margin-bottom: 0px;
   text-decoration: none;
@@ -204,12 +206,14 @@ header .icon__item .number {
   font-weight: 700;
   color: #000000;
   margin-bottom: 5px;
+  font-family: "Raleway", sans-serif;
 }
 .sticker__item > .sticker__item__price > .taka {
-  font-size: 25px;
+  font-size: 16px;
   font-weight: 900;
   color: #000000;
   margin-bottom: 5px;
+  font-family: "Raleway", sans-serif;
 }
 
 /* recent product  */
@@ -275,12 +279,14 @@ header .icon__item .number {
   font-weight: 700;
   color: #000000;
   margin-bottom: 5px;
+  font-family: "Raleway", sans-serif;
 }
 .recentProduct__item > .recentProduct__item__price > .taka {
-  font-size: 25px;
+  font-size: 16px;
   font-weight: 900;
   color: #000000;
   margin-bottom: 5px;
+  font-family: "Raleway", sans-serif;
 }
 .recentProduct__item > .recentProduct__item__reating {
   padding: 5px 0px;
@@ -289,4 +295,66 @@ header .icon__item .number {
   color: #b43768;
   padding: 0px -5px;
   margin: 0px -3px;
+}
+
+/* testmonial slider section  */
+
+.testmonialSlider__img{
+  height: 200px;
+  width: 100%;
+}
+.testmonialSlider__text{
+  font-size: 16px;
+  font-weight: 500;
+  color: #222222;
+  font-family: "Raleway", sans-serif;
+}
+.testmonialSlider__author{
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+}
+.testmonialSlider__title{
+  font-size: 16px;
+  font-weight: 500;
+  color: #222222;
+  font-family: "Raleway", sans-serif;
+}
+/* slider prev and next btn change  */
+.testmonial-section .swiper-button-prev::after,
+.testmonial-section .swiper-button-next::after {
+  display: none;
+}
+.testmonial-section .swiper-button-prev {
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50%;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+.testmonial-section .swiper-button-next {
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50%;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+.testmonial-section .swiper-button-prev i {
+  font-size: 17px;
+  color: #ffffff;
+}
+.testmonial-section .swiper-button-next i {
+  font-size: 17px;
+  color: #ffffff;
 }
