@@ -358,3 +358,28 @@ header .icon__item .number {
   font-size: 17px;
   color: #ffffff;
 }
+
+
+
+/* footer  */
+footer{
+  background-color: #B43768;
+  padding: 50px 0px;
+}
+.footerListTitle{
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+}
+.footerList{
+  list-style: none;
+  padding-left: 0px;
+}
+.footerList__item{
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  padding-top: 3px;
+}
