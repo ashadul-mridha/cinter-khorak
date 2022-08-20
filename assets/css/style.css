@@ -6,6 +6,10 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+.paddingY{
+  padding: 80px 0px;
+}
+
 /* header part  */
 header {
   padding: 30px 0px;
@@ -97,4 +101,40 @@ header .icon__item .number {
 }
 .hero-section .swiper-pagination-bullet.swiper-pagination-bullet-active{
     opacity: 1;
+}
+
+/* category section  */
+
+.category{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.category__item{
+  position: relative;
+  cursor: pointer;
+}
+.category__item > .category__item__image{
+  height: 500px;
+  width: auto;
+}
+.category__item > .category__item__title{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #000000;
+  width: 100%;
+  transition: padding 5ms ease-in-out;
+  padding: 30px 30px 40px 40px;
+}
+.category__item:hover > .category__item__title{
+  cursor: pointer;
+  padding: 30px 30px 60px 40px;
+  background-color: #b43768;
+}
+.category__item > .category__item__title > h6{
+  text-align: start;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
 }
