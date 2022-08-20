@@ -43,6 +43,11 @@ header {
   object-fit: contain;
 }
 
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
 header .nav-item {
   margin: 0px 12px;
 }
@@ -217,7 +222,7 @@ header .icon__item .number {
 }
 
 /* recent product  */
-.recent-product-section{
+.recent-product-section {
   padding: 50px 0px;
 }
 .recentProduct {
@@ -226,7 +231,7 @@ header .icon__item .number {
   grid-gap: 20px;
   padding-top: 15px;
 }
-.recentProduct__item{
+.recentProduct__item {
   position: relative;
 }
 .recentProduct__item > .recentProduct__item__image {
@@ -235,7 +240,7 @@ header .icon__item .number {
   text-decoration: none;
   display: block;
 }
-.recentProduct__item:hover > .recentProduct__item__image.second-image{
+.recentProduct__item:hover > .recentProduct__item__image.second-image {
   opacity: 1;
 }
 .recentProduct__item > .recentProduct__item__image.second-image {
@@ -299,23 +304,23 @@ header .icon__item .number {
 
 /* testmonial slider section  */
 
-.testmonialSlider__img{
+.testmonialSlider__img {
   height: 200px;
   width: 100%;
 }
-.testmonialSlider__text{
+.testmonialSlider__text {
   font-size: 16px;
   font-weight: 500;
   color: #222222;
   font-family: "Raleway", sans-serif;
 }
-.testmonialSlider__author{
+.testmonialSlider__author {
   font-size: 20px;
   font-weight: 500;
   color: #000000;
   font-family: "Raleway", sans-serif;
 }
-.testmonialSlider__title{
+.testmonialSlider__title {
   font-size: 16px;
   font-weight: 500;
   color: #222222;
@@ -359,27 +364,57 @@ header .icon__item .number {
   color: #ffffff;
 }
 
-
-
 /* footer  */
-footer{
-  background-color: #B43768;
+footer {
+  background-color: #b43768;
   padding: 50px 0px;
 }
-.footerListTitle{
+.footerListTitle {
   font-size: 16px;
   color: #ffffff;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
 }
-.footerList{
+.footerList {
   list-style: none;
   padding-left: 0px;
 }
-.footerList__item{
+.footerList__item {
   font-size: 13px;
   color: #ffffff;
   font-weight: 500;
   font-family: "Raleway", sans-serif;
   padding-top: 3px;
+}
+
+@media screen and (max-width: 576px) {
+  .testmonialSlider__img{
+    width: 100%;
+    height: 300px;
+  }
+  .category{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sticker {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .recentProduct{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .testmonialSlider__img{
+    width: 100%;
+    height: 250px;
+  }
+  .category{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sticker {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .recentProduct{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
